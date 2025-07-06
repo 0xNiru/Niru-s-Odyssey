@@ -1,7 +1,6 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
-import "@picocss/pico/css/pico.min.css"; // <- Importing Pico CSS globally
+import "@picocss/pico/css/pico.min.css";
 import styles from "@/styles/Home.module.css";
 
 const geistSans = Geist({
@@ -18,7 +17,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Niru's Odyssey</title>
+        <title>Niru&#39;s Odyssey</title>
         <meta name="description" content="A journey of code, soul, and sunsets." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -29,7 +28,7 @@ export default function Home() {
       >
         <main className="container" style={{ paddingTop: "4rem", textAlign: "center" }}>
           <h1 style={{ fontFamily: "var(--font-geist-sans)", fontSize: "3rem" }}>
-            Niru's Odyssey
+            Niru&#39;s Odyssey
           </h1>
           <p style={{ fontFamily: "var(--font-geist-mono)", opacity: 0.8 }}>
             No growth hacks. Just honest updates.
