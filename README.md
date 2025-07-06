@@ -4,8 +4,7 @@
   <img src="https://i.postimg.cc/MTWnR13n/niru-s.png"/>
 </div>
 
-> A personal log of everything I’m building, breaking, feeling, and fixing.
-> Logs from a mind that refuses to stay silent.
+> A personal blog of everything I’m building, breaking, feeling, and fixing.
 
 ---
 
