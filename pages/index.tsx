@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Rock_Salt, Rye } from "next/font/google";
 import "@picocss/pico/css/pico.min.css";
 import styles from "@/styles/Home.module.css";
 
@@ -13,31 +13,30 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const Ryefont = Rye({
+  variable: "--font-rye",
+  subsets: ["latin"],
+  weight: "400",
+}); 
+
+const rockFont = Rock_Salt({
+  variable: "--font-rock-salt",
+  weight: "400",
+  subsets: ["latin"]
+})
+
 export default function Home() {
   return (
-    <>
+    <div className={`${geistSans.variable} ${geistMono.variable} ${Ryefont.variable} ${rockFont.variable}`}>
       <Head>
-        <title>Niru&#39;s Odyssey</title>
-        <meta name="description" content="A journey of code, soul, and sunsets." />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>Niru's Odyssey</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
-      <div
-        className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
-      >
-        <main className="container" style={{ paddingTop: "4rem", textAlign: "center" }}>
-          <h1 style={{ fontFamily: "var(--font-geist-sans)", fontSize: "3rem" }}>
-            Niru&#39;s Odyssey
-          </h1>
-          <p style={{ fontFamily: "var(--font-geist-mono)", opacity: 0.8 }}>
-            No growth hacks. Just honest updates.
-          </p>
-          <a href="https://github.com/0xNiru/Niru-s-Odyssey" role="button">
-            View on GitHub
-          </a>
-        </main>
-      </div>
-    </>
-  );
+      <main>
+        <h1 className={styles.heading}>NIRU'S ODYSSEY</h1>
+      </main>
+
+    </div>
+  )
 }

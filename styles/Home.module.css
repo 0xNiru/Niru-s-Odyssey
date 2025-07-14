@@ -166,3 +166,12 @@ a.secondary {
     filter: invert();
   }
 }
+
+.heading {
+  font-family: var(--font-rye);
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: 30px;
+}
+
+
